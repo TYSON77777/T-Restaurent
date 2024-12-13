@@ -1,0 +1,94 @@
+/* Import a unique font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  /* New font */
+}
+
+.navigation-menu li {
+  margin: 0px 20px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  /* Animation for hover */
+}
+
+.navigation-menu li:hover {
+  transform: scale(1.1);
+  /* Hover scale effect */
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border-radius: 50px;
+  /* Rounded shape */
+  transition: all 0.3s ease;
+  /* Smooth transition */
+  position: relative;
+}
+
+.navigation-menu li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: goldenrod;
+  transition: width 0.3s ease;
+  /* Underline animation */
+}
+
+.navigation-menu li a:hover::before {
+  width: 100%;
+  /* Underline expands on hover */
+}
+
+.navigation-menu li a:hover {
+  background-color: goldenrod;
+  /* Background color change on hover */
+  color: white;
+  /* Text color change */
+}
+
+.active {
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold !important;
+}
+
+/* Mobile view */
+.mobile-navigation {
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mobile-navigation li {
+  margin-top: 20px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-navigation li:hover {
+  transform: scale(1.1);
+}
+
+.mobile-navigation li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: black;
+  padding: 15px 25px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.mobile-navigation li a:hover {
+  background-color: goldenrod;
+  color: white;
+}

@@ -1,0 +1,144 @@
+/* Container Styling */
+.container {
+    margin-top: 40px;
+    margin-left: 40px;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeInContainer 1s ease-in-out;
+}
+
+/* Container Fade-in Animation */
+@keyframes fadeInContainer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header Animation */
+.container h4 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #00796b;
+    animation: fadeInHeader 1.2s ease-in-out;
+}
+
+/* Header Fade-in Animation */
+@keyframes fadeInHeader {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Description Animation */
+.description {
+    font-size: 16px;
+    color: #00695c;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    animation: fadeInText 1.4s ease-in-out;
+}
+
+/* Description Fade-in Animation */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Table Container with Slide-in Animation */
+.tableContainer {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: slideInTable 1s ease-in-out;
+}
+
+/* Slide-in Keyframe */
+@keyframes slideInTable {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Table Header Styling */
+.tableHeader {
+    background-color: #00796b;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* Table Cell Styling */
+.tableCell {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #004d40;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .tableContainer {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tableHeader,
+    .tableCell {
+        font-size: 14px;
+    }
+}
+
+/* Icon Styling */
+.icon {
+    margin-right: 10px;
+    color: #00838f;
+    font-size: 18px;
+    animation: fadeInIcon 1.5s ease-in-out;
+}
+
+/* Icon Fade-in Animation */
+@keyframes fadeInIcon {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

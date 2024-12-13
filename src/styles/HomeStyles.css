@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+.home {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.headerContainer {
+  width: auto;
+  margin-left: 30px;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+.home .headerContainer h1 {
+  font-weight: 600;
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 251, 251);
+  opacity: 0;
+  animation: fadeInUpText 1.8s ease-in-out forwards;
+}
+
+.home .headerContainer p {
+  margin-top: 15px;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  animation: fadeInUpText 2s ease-in-out forwards;
+}
+
+.headerContainer button {
+  background-color: #121619;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 180px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.headerContainer button:hover {
+  background-color: #07090a;
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headerContainer {
+    margin-left: 0;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121619;
+    color: white;
+    padding: 20px;
+    animation: none;
+  }
+
+  .home .headerContainer h1 {
+    font-size: 40px;
+    margin: 20px 0;
+    color: white;
+  }
+
+  .home .headerContainer p {
+    font-size: 30px;
+    color: white;
+  }
+
+  .headerContainer button {
+    background-color: white;
+    color: #121619;
+    margin-bottom: 30px;
+  }
+
+  .headerContainer button:hover {
+    background-color: #07090a;
+    color: white;
+  }
+}
